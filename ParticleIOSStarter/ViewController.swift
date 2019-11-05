@@ -141,7 +141,7 @@ class ViewController: UIViewController {
                 print("Error when telling Particle to turn green")
             }
         }
-        //var bytesToReceive : Int64 = task.countOfBytesExpectedToReceive
+        
         
     }
     
