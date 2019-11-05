@@ -66,9 +66,9 @@
 				0582562322C7B7A800473EAD /* AppDelegate.swift */,
 				0582562522C7B7A800473EAD /* ViewController.swift */,
 				0582562722C7B7A800473EAD /* Main.storyboard */,
+				0582562F22C7B7A800473EAD /* Info.plist */,
 				0582562A22C7B7A800473EAD /* Assets.xcassets */,
 				0582562C22C7B7A800473EAD /* LaunchScreen.storyboard */,
-				0582562F22C7B7A800473EAD /* Info.plist */,
 				8B06F6D723712A4400149BCD /* SecondViewController.swift */,
 			);
 			path = ParticleIOSStarter;

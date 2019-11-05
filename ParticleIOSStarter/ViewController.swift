@@ -97,11 +97,13 @@ class ViewController: UIViewController {
                 let choice = (event?.data)!
                 if (choice == "A") {
                     self.triangle()
+                    self.turnParticleGreen()
                 print("Triangle has 3 Sides Correct !!")
                     self.gameScore = self.gameScore + 1;
                 }
                 else if (choice == "B") {
                     self.rectangle()
+                    self.turnParticleGreen()
                     
                      self.gameScore = self.gameScore + 1;
                     
