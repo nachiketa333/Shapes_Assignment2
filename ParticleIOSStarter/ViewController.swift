@@ -97,11 +97,19 @@ class ViewController: UIViewController {
                 let choice = (event?.data)!
                 if (choice == "A") {
                     self.triangle()
-                 //   self.turnParticleGreen()
+                print("Triangle has 3 Sides Correct !!")
                     self.gameScore = self.gameScore + 1;
                 }
                 else if (choice == "B") {
+                    self.rectangle()
+                    
+                     self.gameScore = self.gameScore + 1;
+                    
+                    print("Rectangle Has 4 sides correct !!s")
+                }
+                else {
                     self.turnParticleRed()
+                    
                 }
             }
         })
@@ -132,6 +140,24 @@ class ViewController: UIViewController {
         print("Pressed the change lights button")
         
         let parameters = ["triangle"]
+        var task = myPhoton!.callFunction("answer", withArguments: parameters) {
+            (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("Sent message to Particle to turn green")
+            }
+            else {
+                print("Error when telling Particle to turn green")
+            }
+        }
+        
+        
+    }
+    
+    func rectangle() {
+        
+        print("Pressed the change lights button")
+        
+        let parameters = ["rectangle"]
         var task = myPhoton!.callFunction("answer", withArguments: parameters) {
             (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
